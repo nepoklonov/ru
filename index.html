@@ -1,0 +1,74 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Иван Непоклонов</title>
+    <style>
+        div.content {
+            max-width: 400px;
+            margin: 10px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            display: inline-block;
+        }
+
+        a {
+            color: dodgerblue;
+            transition: 0.1s;
+        }
+
+        a:hover {
+            color: darkblue;
+        }
+
+        div.links {
+            display: flex;
+            gap: 30px;
+        }
+
+        span.version {
+            color: #dddddd;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <header>
+        <h1>nepoklonov.ru</h1>
+        <span class="version">v1.0.0</span>
+    </header>
+    <hr>
+    <div class="links">
+        <a target="_blank" href="https://github.com/nepoklonov">github.com/nepoklonov</a>
+        <a target="_blank" href="https://t.me/nepoklonov">t.me/nepoklonov</a>
+    </div>
+    <br>
+    <article id="sample-text"></article>
+    <script>
+        let texts = [
+            "Вот же —<br/>чистый<br/>бескорыстный<br/>ритуал.",
+            "Наутро увиденное воспринималось сквозь сон.",
+            "Программирование<br/>сделано большинством по жизни нашей.",
+            "«Мы живём в обществе».<br/>— Джокер",
+            "Амстердам — город любви, ах, как давно мы там не были.",
+            "Она родилась внутри отстранённой местности.",
+            "Ищи легушку<br/>в песке, если ты в пустыне.",
+            "Щаться. Щение.",
+            "Термин «Рига» тебе известен?",
+            "Обнови, чтобы тебе было не скучно, дорогой читатель."
+        ]
+        let number = Math.floor(Math.random() * texts.length)
+        document.querySelector("#sample-text").innerHTML = texts[number]
+    </script>
+</div>
+</body>
+</html>
