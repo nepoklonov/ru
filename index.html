@@ -28,9 +28,8 @@
             color: darkblue;
         }
 
-        div.links {
-            display: flex;
-            gap: 30px;
+        span.not-a-link {
+            color: dodgerblue;
         }
 
         span.version {
@@ -38,18 +37,32 @@
             font-weight: bold;
             font-size: 2em;
         }
+
+        article#sample-text {
+            display: none;
+        }
     </style>
 </head>
 <body>
 <div class="content">
     <header>
         <h1>nepoklonov.ru</h1>
-        <span class="version">v1.0.0</span>
+        <span class="version">v1.0.1</span>
     </header>
     <hr>
     <div class="links">
-        <a target="_blank" href="https://github.com/nepoklonov">github.com/nepoklonov</a>
-        <a target="_blank" href="https://t.me/nepoklonov">t.me/nepoklonov</a>
+        <p>
+            <a target="_blank" href="https://github.com/nepoklonov">github.com/nepoklonov</a>
+        </p>
+        <p>
+            <a target="_blank" href="https://t.me/nepoklonov">t.me/nepoklonov</a>
+        </p>
+        <p>
+            <span class="not-a-link">i.s.nepoklonov@yandex.ru</span>
+        </p>
+        <p>
+            <span class="not-a-link">+7-981-699-64-55</span>
+        </p>
     </div>
     <br>
     <article id="sample-text"></article>
